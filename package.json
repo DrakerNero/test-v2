@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --copy-files --out-dir dist --ignore *.spec.js src",
+    "test": "mocha test --compilers js:babel-register",
+    "build": "babel --copy-files --out-dir dist --ignore *.spec.js *.test.js src",
     "commit": "git-cz",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
