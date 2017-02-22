@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.0.0-development",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha test --compilers js:babel-register",
     "build": "babel --copy-files --out-dir dist --ignore *.spec.js *.test.js src",
@@ -21,6 +21,10 @@
     "mocha": "^3.2.0",
     "semantic-release": "^6.3.2"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
   },
